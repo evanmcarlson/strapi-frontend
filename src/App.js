@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import axios from 'axios';
 import HomeScreen from './components/HomeScreen';
-
+import ToolsScreen from './components/ToolsScreen';
 
 const fetchedHome = [
   {
@@ -57,7 +57,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <HomeScreen content={fetchedHome}/>
+        <ToolsScreen content={fetchedTools}/>
       </div>
     );
   }
