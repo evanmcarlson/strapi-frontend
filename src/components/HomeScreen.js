@@ -3,11 +3,11 @@ import React from 'react';
 function HomeScreen(props) {
   const {content} = props;
   return (
-    <div className="HomeScreen">
+    <div>
       {content.map((piece, index) => (
         <>
-          <h3>{piece.title}</h3>
-          <p>{piece.description}</p>
+          <h3>{piece.name}</h3>
+          <p>{piece.location}</p>
         </>
       ))}
     </div>
